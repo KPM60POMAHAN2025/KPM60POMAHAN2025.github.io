@@ -1,0 +1,30 @@
+/* Menggunakan font Inter sebagai default */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFBF5; /* Warna latar belakang krem hangat */
+    color: #333;
+}
+
+/* Skema warna kustom untuk digunakan dengan kelas Tailwind */
+.bg-brand-green { background-color: #3A6A4D; }
+.text-brand-green { color: #3A6A4D; }
+.border-brand-green { border-color: #3A6A4D; }
+.bg-brand-cream { background-color: #FDFBF5; }
+.text-brand-cream { color: #FDFBF5; }
+.bg-brand-darkgreen { background-color: #2F5240; }
+.text-brand-darkgreen { color: #2F5240; }
+
+/* Efek smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gaya untuk judul bagian */
+.section-title {
+    font-weight: 800;
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+    color: #2F5240; /* Hijau tua */
+    text-align: center;
+    margin-bottom: 3rem; /* 48px */
+}
