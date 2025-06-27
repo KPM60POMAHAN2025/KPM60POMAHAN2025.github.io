@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPM 60 Desa Pomahan, Pulung, Ponorogo</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header" class="bg-brand-cream/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo dan Nama KPM -->
+            <a href="#" class="flex items-center space-x-3">
+                <img src="logo/kpmm60.png" alt="Logo KPM 60" class="h-10 w-10">
+                <span class="text-xl font-bold text-brand-darkgreen">KPM 60 Pomahan</span>
+            </a>
+            
+            <!-- Navigasi untuk Desktop -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-brand-green font-medium">Beranda</a>
+                <a href="#about" class="text-gray-600 hover:text-brand-green font-medium">Tentang</a>
+                <a href="#programs" class="text-gray-600 hover:text-brand-green font-medium">Program</a>
+                <a href="#gallery" class="text-gray-600 hover:text-brand-green font-medium">Galeri</a>
+                <a href="#team" class="text-gray-600 hover:text-brand-green font-medium">Tim</a>
+            </nav>
+            
+            <!-- Tombol Kontak -->
+            <a href="#contact" class="hidden md:block bg-brand-green hover:bg-brand-darkgreen text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                Hubungi Kami
+            </a>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-brand-darkgreen"></i>
+            </button>
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-6 text-sm text-gray-700 hover:bg-green-100">Beranda</a>
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-green-100">Tentang</a>
+            <a href="#programs" class="block py-2 px-6 text-sm text-gray-700 hover:bg-green-100">Program</a>
+            <a href="#gallery" class="block py-2 px-6 text-sm text-gray-700 hover:bg-green-100">Galeri</a>
+            <a href="#team" class="block py-2 px-6 text-sm text-gray-700 hover:bg-green-100">Tim</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-green-100">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Hero -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1596591603953-6031252112a0?q=80&w=2070&auto=format&fit=crop');">
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+            <div class="relative z-10 container mx-auto px-6 text-white">
+                <img src="https://i.imgur.com/rMvJc7B.png" alt="Logo KPM 60" class="mx-auto mb-6 h-32 w-32 md:h-40 md:w-40 animate-pulse">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    KPM Kelompok 60 Desa Pomahan
+                </h1>
+                <p class="text-lg md:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                    Mengabdi dan Berinovasi Bersama Masyarakat untuk Desa yang Lebih Maju dan Sejahtera.
+                </p>
+                <a href="#about" class="bg-brand-green hover:bg-brand-darkgreen text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    Selengkapnya
+                </a>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Kami -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Tentang KPM 60 Pomahan</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1541848756149-e24aa34423b3?q=80&w=1974&auto=format&fit=crop" alt="Suasana Desa Pomahan" class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 text-lg space-y-4">
+                        <p>
+                            Selamat datang di halaman resmi <strong>Kuliah Pengabdian Masyarakat (KPM) Kelompok 60</strong> di Desa Pomahan, Kecamatan Pulung, Kabupaten Ponorogo. Kami adalah sekelompok mahasiswa yang berdedikasi untuk memberikan kontribusi nyata bagi pengembangan masyarakat.
+                        </p>
+                        <p>
+                            Kegiatan KPM kami berlangsung dari <strong>Juli</strong> hingga <strong>Agustus 2025</strong>. Melalui berbagai program kerja yang telah kami rancang, kami berharap dapat membawa perubahan positif, khususnya dalam bidang pendidikan, ekonomi kreatif, kesehatan, dan lingkungan.
+                        </p>
+                         <p>
+                            Desa Pomahan adalah desa yang indah dengan potensi luar biasa. Kami berkomitmen untuk bekerja sama dengan warga setempat, aparatur desa, dan semua pihak terkait untuk mencapai tujuan bersama.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Program Kerja -->
+        <section id="programs" class="py-20 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Program Kerja Unggulan</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Kartu Program 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-4xl text-brand-green mb-4"><i class="fas fa-book-open-reader"></i></div>
+                        <h3 class="text-2xl font-bold text-brand-darkgreen mb-3">Pendidikan Kreatif</h3>
+                        <p class="text-gray-600">Mengadakan bimbingan belajar, pelatihan literasi digital, dan pembuatan pojok baca untuk anak-anak desa.</p>
+                    </div>
+                    <!-- Kartu Program 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-4xl text-brand-green mb-4"><i class="fas fa-seedling"></i></div>
+                        <h3 class="text-2xl font-bold text-brand-darkgreen mb-3">UMKM & Ekonomi Lokal</h3>
+                        <p class="text-gray-600">Pelatihan dan pendampingan untuk UMKM desa dalam hal branding, packaging, dan pemasaran digital produk lokal.</p>
+                    </div>
+                    <!-- Kartu Program 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-4xl text-brand-green mb-4"><i class="fas fa-heart-pulse"></i></div>
+                        <h3 class="text-2xl font-bold text-brand-darkgreen mb-3">Kesehatan Masyarakat</h3>
+                        <p class="text-gray-600">Program penyuluhan kesehatan, senam bersama, dan kampanye pola hidup sehat untuk semua kalangan usia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Galeri -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Galeri Kegiatan</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x750/3A6A4D/FFFFFF?text=Kegiatan+1" alt="Galeri KPM"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x500/2F5240/FFFFFF?text=Kegiatan+2" alt="Galeri KPM"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x500/3A6A4D/FFFFFF?text=Kegiatan+3" alt="Galeri KPM"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x750/2F5240/FFFFFF?text=Kegiatan+4" alt="Galeri KPM"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x750/3A6A4D/FFFFFF?text=Kegiatan+5" alt="Galeri KPM"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x500/2F5240/FFFFFF?text=Kegiatan+6" alt="Galeri KPM"></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x500/3A6A4D/FFFFFF?text=Kegiatan+7" alt="Galeri KPM"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" src="https://placehold.co/500x750/2F5240/FFFFFF?text=Kegiatan+8" alt="Galeri KPM"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Tim -->
+        <section id="team" class="py-20 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Tim KPM 60</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-10">
+                    <!-- Data Anggota Tim -->
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Ahmad Faza Masruri">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Ahmad Faza Masruri</h4>
+                        <p class="text-gray-500">Ketua</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Cindy Novita Winanda">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Cindy Novita Winanda</h4>
+                        <p class="text-gray-500">Wakil Ketua</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Anida Feni Oktavia">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Anida Feni Oktavia</h4>
+                        <p class="text-gray-500">Sekretaris</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Evi Kelin Sukmaningtias">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Evi Kelin S.</h4>
+                        <p class="text-gray-500">Sekretaris</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Syaqinata Mahayanti">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Syaqinata Mahayanti</h4>
+                        <p class="text-gray-500">Bendahara</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Windha Meliana Sulystiani">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Windha Meliana S.</h4>
+                        <p class="text-gray-500">Bendahara</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Dwi Nur Elsa Fatmawati">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Dwi Nur Elsa F.</h4>
+                        <p class="text-gray-500">Sie. Kegiatan</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Zian Maulikatul Wuqufiyah">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Zian Maulikatul W.</h4>
+                        <p class="text-gray-500">Sie. Kegiatan</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Diah Wahyu Nor Fatmawati">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Diah Wahyu Nor F.</h4>
+                        <p class="text-gray-500">Sie. Konsumsi</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Cahyaning Mustika Dewi">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Cahyaning Mustika D.</h4>
+                        <p class="text-gray-500">Sie. Konsumsi</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Bagus Adi Saputra">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Bagus Adi Saputra</h4>
+                        <p class="text-gray-500">Sie. PDD</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Meta">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Meta</h4>
+                        <p class="text-gray-500">Sie. PDD</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Andar Harmoni Amanatulloh">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Andar Harmoni A.</h4>
+                        <p class="text-gray-500">Sie. Humas</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Fithria Salsabila">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Fithria Salsabila</h4>
+                        <p class="text-gray-500">Sie. Humas</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Ihsan Nur Rohman">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Ihsan Nur Rohman</h4>
+                        <p class="text-gray-500">Sie. Perkap</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Kerin Priska Septiani">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Kerin Priska Septiani</h4>
+                        <p class="text-gray-500">Sie. Perkap</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Annisa Maulida Hidayati">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Annisa Maulida H.</h4>
+                        <p class="text-gray-500">Sie. Keagamaan</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Mifta Dwi Muhamad Faizul Azizah">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Mifta Dwi M. Faizul A.</h4>
+                        <p class="text-gray-500">Sie. Keagamaan</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Rita Yuliana">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Rita Yuliana</h4>
+                        <p class="text-gray-500">Sie. Pendidikan</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg object-cover" src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Foto" alt="Foto Ahmad Faizul Dhozali">
+                        <h4 class="text-lg font-bold text-brand-darkgreen">Ahmad Faizul Dhozali</h4>
+                        <p class="text-gray-500">Sie. Pendidikan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-brand-darkgreen text-brand-cream">
+            <div class="container mx-auto px-6 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">KPM 60 DESA POMAHAN</h3>
+                        <p class="text-sm text-gray-300">
+                            Desa Pomahan, Kecamatan Pulung<br>
+                            Kabupaten Ponorogo, Jawa Timur
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Tautan Navigasi</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#about" class="hover:text-white">Tentang Kami</a></li>
+                            <li><a href="#programs" class="hover:text-white">Program Kerja</a></li>
+                            <li><a href="#gallery" class="hover:text-white">Galeri</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
+                        <div class="flex justify-center md:justify-start space-x-4 text-2xl">
+                            <a href="https://www.instagram.com/kpm60_uinpo/profilecard/?igsh=MTJyd2FlZ2oyeWd6ZQ==" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@kpm60_uinpo2025?_t=ZS-8xDw94mNgQL&_r=1" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-600 mt-8 pt-6 text-center text-sm text-gray-400">
+                    <p>&copy; 2025 KPM 60 Desa Pomahan. Dibuat dengan ❤️.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
