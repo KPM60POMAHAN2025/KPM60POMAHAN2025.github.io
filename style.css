@@ -28,3 +28,50 @@ html {
     text-align: center;
     margin-bottom: 3rem; /* 48px */
 }
+
+/* ======================================= */
+/* == CSS UNTUK EFEK OVERLAY PADA GALERI == */
+/* ======================================= */
+
+.gallery-item {
+  position: relative; /* Membuat container ini menjadi acuan untuk overlay */
+  overflow: hidden; /* Menyembunyikan bagian overlay yang keluar dari gambar */
+  border-radius: 0.5rem; /* Menyamakan sudut melengkung dengan gambar di dalamnya */
+  display: block; /* Memastikan elemen ini berperilaku sebagai blok */
+}
+
+.gallery-item img {
+  display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Membuat gambar mengisi kotak tanpa merusak rasio aspek */
+  transition: transform 0.3s ease; /* Transisi untuk efek zoom */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); /* Sedikit zoom pada gambar saat di-hover */
+}
+
+.gallery-item .gallery-overlay {
+  position: absolute; /* Kunci untuk menumpuk elemen ini di atas gambar */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(47, 82, 64, 0.9), rgba(47, 82, 64, 0)); /* Gradien dari bawah ke atas */
+  color: white;
+  padding: 2.5rem 1rem 1rem 1rem; /* Padding atas-kanan-bawah-kiri */
+  
+  /* Secara default, sembunyikan overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Saat kursor mouse di atas .gallery-item, tampilkan .gallery-overlay */
+.gallery-item:hover .gallery-overlay {
+  opacity: 1; /* Munculkan overlay */
+}
+
+.gallery-overlay h3 {
+  font-weight: 700; /* Bold */
+  font-size: 1.125rem; /* Sedikit lebih besar */
+}
