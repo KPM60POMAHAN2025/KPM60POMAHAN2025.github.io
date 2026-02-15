@@ -1,0 +1,206 @@
+/* Gaya dasar untuk link navigasi */
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    color: #4b5563;
+    /* Sama dengan text-gray-600 */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+/* Warna saat kursor menyentuh link */
+
+.nav-link:hover {
+    color: #15803d;
+    /* Sesuaikan dengan warna brand-green Anda */
+}
+
+.btn-contact {
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Membuat garis bawah tersembunyi */
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #15803d;
+    /* Warna garis (brand-green) */
+    transition: width 0.3s ease;
+}
+
+
+/* Animasi garis memanjang saat di-hover */
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Menggunakan font Inter sebagai default */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFBF5;
+    /* Warna latar belakang krem hangat */
+    color: #333;
+}
+
+
+/* Animasi Bergerak untuk Background Hero */
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-slow-zoom {
+    animation: slowZoom 20s infinite ease-in-out;
+}
+
+
+/* Memastikan konten tetap di atas dan tidak ikut goyang */
+
+#home {
+    perspective: 1000px;
+}
+
+
+/* Skema warna kustom untuk digunakan dengan kelas Tailwind */
+
+.bg-brand-green {
+    background-color: #3A6A4D;
+}
+
+.text-brand-green {
+    color: #3A6A4D;
+}
+
+.border-brand-green {
+    border-color: #3A6A4D;
+}
+
+.bg-brand-cream {
+    background-color: #FDFBF5;
+}
+
+.text-brand-cream {
+    color: #FDFBF5;
+}
+
+.bg-brand-darkgreen {
+    background-color: #2F5240;
+}
+
+.text-brand-darkgreen {
+    color: #2F5240;
+}
+
+
+/* Efek smooth scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Gaya untuk judul bagian */
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.25rem;
+    /* 36px */
+    line-height: 2.5rem;
+    /* 40px */
+    color: #2F5240;
+    /* Hijau tua */
+    text-align: center;
+    margin-bottom: 3rem;
+    /* 48px */
+}
+
+
+/* ======================================= */
+
+
+/* == CSS UNTUK EFEK OVERLAY PADA GALERI == */
+
+
+/* ======================================= */
+
+.gallery-item {
+    position: relative;
+    /* Membuat container ini menjadi acuan untuk overlay */
+    overflow: hidden;
+    /* Menyembunyikan bagian overlay yang keluar dari gambar */
+    border-radius: 0.5rem;
+    /* Menyamakan sudut melengkung dengan gambar di dalamnya */
+    display: block;
+    /* Memastikan elemen ini berperilaku sebagai blok */
+}
+
+.gallery-item img {
+    display: block;
+    /* Menghilangkan spasi ekstra di bawah gambar */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Membuat gambar mengisi kotak tanpa merusak rasio aspek */
+    transition: transform 0.3s ease;
+    /* Transisi untuk efek zoom */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    /* Sedikit zoom pada gambar saat di-hover */
+}
+
+.gallery-item .gallery-overlay {
+    position: absolute;
+    /* Kunci untuk menumpuk elemen ini di atas gambar */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(47, 82, 64, 0.9), rgba(47, 82, 64, 0));
+    /* Gradien dari bawah ke atas */
+    color: white;
+    padding: 2.5rem 1rem 1rem 1rem;
+    /* Padding atas-kanan-bawah-kiri */
+    /* Secara default, sembunyikan overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Saat kursor mouse di atas .gallery-item, tampilkan .gallery-overlay */
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    /* Munculkan overlay */
+}
+
+.gallery-overlay h3 {
+    font-weight: 700;
+    /* Bold */
+    font-size: 1.125rem;
+    /* Sedikit lebih besar */
+}
